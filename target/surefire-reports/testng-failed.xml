@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" verbose="0">
+  <listeners>
+    <listener class-name="FrameworkDesign.TestComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Submit Order Test(failed)" verbose="0">
+    <classes>
+      <class name="FrameworkDesign.Tests.SubmitOrderTest">
+        <methods>
+          <include name="OrderHistoryTest"/>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+          <include name="SubmitOrder"/>
+        </methods>
+      </class> <!-- FrameworkDesign.Tests.SubmitOrderTest -->
+    </classes>
+  </test> <!-- Submit Order Test(failed) -->
+  <test thread-count="5" parallel="tests" name="Error Validation Test(failed)" verbose="0">
+    <classes>
+      <class name="FrameworkDesign.Tests.ErrorValidationTest">
+        <methods>
+          <include name="ProductPageErrorvalidation"/>
+          <include name="launchApplication"/>
+          <include name="LoginPageErrorvalidation"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- FrameworkDesign.Tests.ErrorValidationTest -->
+    </classes>
+  </test> <!-- Error Validation Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
