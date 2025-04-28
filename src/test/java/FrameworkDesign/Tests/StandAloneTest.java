@@ -18,6 +18,7 @@ public class StandAloneTest {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
+		// new comments added for GITHUB testing purpose
 
 		String productName = "ADIDAS ORIGINAL";
 		WebDriver driver = new ChromeDriver();
